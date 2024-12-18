@@ -85,7 +85,13 @@ Start scraping the product data from the website.
 - `pages` (Optional): Number of pages to scrape. Default is `5`.
 - `max_products` (Optional): Maximum number of products to scrape. Default is `10`.
 - `token` (Required): Static token for authentication (e.g., `"static-token"`).
-- `proxy` (Required): Proxy dictionary, e.g., `{"http": "http://your_proxy_here"}`.
+- `proxy` (Required): Proxy dictionary, e.g., `{
+  "proxy": {
+    "http": "http://your_proxy_address:port",
+    "https": "https://your_proxy_address:port"
+  }
+}
+`.
 
 **Response**:
 - `"message"`: A message indicating how many products were successfully scraped.
@@ -199,10 +205,4 @@ curl -X 'GET' \
 - **Proxy Errors**: Ensure the proxy is reachable and correctly configured.
 - **Authentication Errors**: Ensure you're using the correct static token (`"static-token"`) for authentication.
 
-## License
 
-This project is open source and available under the MIT License.
-
----
-
-Let me know if you need further assistance!
