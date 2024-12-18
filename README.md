@@ -205,4 +205,3 @@ curl -X 'GET' \
 - **Proxy Errors**: Ensure the proxy is reachable and correctly configured.
 - **Authentication Errors**: Ensure you're using the correct static token (`"static-token"`) for authentication.
 
-
